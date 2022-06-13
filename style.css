@@ -1,0 +1,389 @@
+   #div-nav {
+        /* cambiar color para ver flexbox */
+        background-color: #1e1f21;
+        /* cambiar color para ver flexbox */
+        font-family: VT323;
+        
+        padding-right: 0px;
+        padding-left: 0px;    
+        padding: 0px;
+    
+        /*responsive*/
+        width: 100%;
+        height: 10%;
+        /**/
+
+        margin-right: 0px;
+        margin-left: 0px;
+
+        border-bottom: solid 5px black;
+
+        position: fixed;
+
+        /*grid*/
+        display: grid;
+        grid-gap: 15%;
+        grid-auto-flow: column;
+        text-align: center;
+        align-items: start;
+        grid-template-areas: "a b c"
+        /**/
+    }
+    
+    #img-logo {
+        grid-area: a;
+
+        width: 10vmin;
+        height: 10vmin;
+        padding: 0px;
+    }
+
+    #main-title {
+        grid-area: b;
+
+        text-align: center;
+        font-size: 4vmin;
+
+        color: white;
+        padding: 0px;
+    }
+    
+    #counter {
+        grid-area: c;
+
+        font-size: 3.5vmin;
+        text-align: center;
+        
+        color: white;
+        padding: 0px;
+    }
+    
+    body {
+        /* cambiar color para ver flexbox */
+        background-color: #2c2f33;
+    }
+    
+    #juego {
+        position: relative;
+        width: 100%;
+        height: 730px;
+        padding: 0%;
+        margin-left: auto;
+        margin-left: auto;
+        margin: 0px;
+        text-align: center;
+        object-fit: cover;
+        background-color: #2c2f33;
+        opacity: 100%;
+        top: 80px;
+    }
+    
+   
+    
+    #img-pavimento {
+        border: solid 10px black;
+        position: absolute;
+        width: 50%;
+        height: 90%;
+        padding: 0%; 
+        margin: 2%;
+        display: block;
+        left: 22%;
+
+        /* animation */
+        animation-name: pavimentoChange;
+        animation-duration: 2.75s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: step-end;
+    }
+    
+    #img-fuente {
+        position: absolute;
+        height: auto;
+        width: 9%;
+        top: 41%;
+        left: 45.3%;
+        
+    
+        /* animation */
+        animation-name: fuenteChange;
+        animation-duration: 0.75s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: step-end; 
+    }
+    
+    #img-banco {
+        position: absolute;
+        height: auto;
+        width: 16%;
+        top: 53%;
+        left: 27%;
+    }
+
+    #etiqueta-banco {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 269px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-catedral {
+        position: absolute;
+        height: auto;
+        width: 18%;
+        left: 23.5%;
+        top: 9%;
+    }
+
+    #etiqueta-catedral {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 340px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-teatro {
+        position: absolute;
+        height: auto;
+        top: 62%;
+        width: 18%;
+        left: 55%;
+    }
+
+    #etiqueta-teatro {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 210px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-museo {
+        position: absolute;
+        height: auto;
+        top: 6%;
+        left: 35.3%;
+        width: 20.3%;
+    }
+
+    #etiqueta-museo {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 290px;
+        height: auto;
+        position: absolute;
+        top: 26px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-sardina {
+        position: absolute;
+        height: auto;
+        top: 76%;
+        width: 15%;
+        left: 42%;
+    }
+    
+    #etiqueta-sardina {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 150px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-arboles {
+        position: absolute;
+        height: auto;
+        top: 10%;
+        width: 50%;
+        top: 3%;
+        left: 24.7%;
+    }
+
+    #etiqueta-arboles {
+        font-family: VT323;
+        font-size: 20px;
+        color: white;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 86px;
+        left: 1109px;
+
+        opacity: 100%;
+    }
+
+    #img-niñoFlori {
+        position: absolute;
+        height: auto;
+        width: 7%;
+        top: 14%;
+        left: 60%;
+
+        animation-name: niñoFloriChange;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: step-end;
+    }
+
+    #img-marinero {
+        position: absolute;
+        height: auto;
+        width: 3.5%;
+        top: 61%;
+        left: 45%;
+
+        animation-name: marineroHablando;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+    }
+
+    #img-ciudadana {
+        position: absolute;
+        height: auto;
+        width: 4%;
+        top: 36%;
+        left: 57%;
+
+        animation-name: ciudadanaHablando;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+    }
+
+    /*etiquetas*/
+
+    #div-arboles:hover ~ #etiqueta-arboles {
+        background-color: darkolivegreen;
+    }
+
+    #div-sardina:hover ~ #etiqueta-sardina {
+        background-color: darkcyan;
+    }
+
+    #div-museo:hover ~ #etiqueta-museo {
+        background-color: orange;
+    }
+
+    #div-teatro:hover ~ #etiqueta-teatro {
+        background-color: darkred;
+    }
+
+    #div-banco:hover ~ #etiqueta-banco {
+        background-color: darksalmon;
+    }
+
+    #div-catedral:hover ~ #etiqueta-catedral {
+        background-color: dark;
+    }
+
+    /*animaciones*/
+    @keyframes fuenteChange {
+        0% {
+            content: url("diseño/fuente/fuente\ \(1\).png")
+        }
+        20% {
+            content: url("diseño/fuente/fuente\ \(2\).png");
+            
+        }
+        40% {
+            content: url("diseño/fuente/fuente\ \(3\).png");
+            
+        }
+        60% {
+            content: url("diseño/fuente/fuente\ \(4\).png")
+        }
+        80% {
+            content: url("diseño/fuente/fuente\ \(5\).png");
+            
+        }   
+        100% {
+            content: url("diseño/fuente/fuente\ \(6\).png")
+        }
+    } 
+    
+    @keyframes pavimentoChange {
+        0% {
+            content: url("diseño/pavimento/pavimento\ \(3\).png")
+        }
+        25% {
+            content: url("diseño/pavimento/pavimento\ \(2\).png");
+            
+        }
+        50% {
+            content: url("diseño/pavimento/pavimento\ \(1\).png");
+        }
+        75% {
+            content: url("diseño/pavimento/pavimento\ \(4\).png")
+        }
+    }
+
+    @keyframes niñoFloriChange {
+        0%  {
+            width: 7.1%;
+            content: url('diseño/npcs/niño\ parque\ 1.png')
+        }
+        50% {
+            content: url('diseño/npcs/niño\ parque\ 2.png');
+            left: 60.3%;
+        }
+    
+    }
+
+    @keyframes marineroHablando {
+        0% {
+            content: url('diseño/npcs/marinero\ 1.png');
+        }
+        50% {
+            content: url('diseño/npcs/marinero\ 2.png');
+        }
+    }
+
+    @keyframes ciudadanaHablando {
+        0% {
+            content: url('diseño/npcs/ciudadana\ 1.png')
+        }
+        50% {
+            content: url('diseño/npcs/ciudadana\ 2.png')
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        #juego {
+            opacity: 0%;
+        }
+
+        #div-nav {
+            opacity: 0%;
+        }
+    }

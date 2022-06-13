@@ -1,5 +1,5 @@
 //COMPROBAR FUNCION parseInt();
-
+/*
 let mainPJ = document.getElementById('img-mainpj');
 let topMainPJ = mainPJ.style.top;
 let leftMainPJ = mainPJ.style.left;
@@ -28,3 +28,4 @@ document.addEventListener('keydown', () => {
         mainPj.style.left= posX.toString();
     }; 
 });
+*/

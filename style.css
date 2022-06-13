@@ -330,10 +330,10 @@
 
     @keyframes niñoFloriChange {
         0%  {
-            content: url('diseño/npcs/niñoParque1.png')
+            content: url('diseño/npcs/niño\ parque\ 1.png')
         }
         50% {
-            content: url('diseño/npcs/niñoParque2.png');
+            content: url('diseño/npcs/niño\ parque\ 2.png');
         }
     
     }

@@ -1,4 +1,4 @@
-// COMPROBAR FUNCION parseInt();
+//COMPROBAR FUNCION parseInt();
 
 let mainPJ = document.getElementById('img-mainpj');
 let topMainPJ = mainPJ.style.top;

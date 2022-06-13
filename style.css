@@ -65,16 +65,10 @@
     
     #juego {
         position: relative;
-        width: 100%;
         height: 730px;
-        padding: 0%;
-        margin-left: auto;
-        margin-left: auto;
-        margin: 0px;
         text-align: center;
         object-fit: cover;
         background-color: #2c2f33;
-        opacity: 100%;
         top: 80px;
     }
     
@@ -83,12 +77,11 @@
     #img-pavimento {
         border: solid 10px black;
         position: absolute;
-        width: 50%;
-        height: 90%;
-        padding: 0%; 
-        margin: 2%;
+        width: 950px;
+        height: 750px;
+        margin: 45px;
         display: block;
-        left: 22%;
+        left: 425px;
 
         /* animation */
         animation-name: pavimentoChange;
@@ -101,9 +94,9 @@
     #img-fuente {
         position: absolute;
         height: auto;
-        width: 9%;
-        top: 41%;
-        left: 45.3%;
+        width: 160px;
+        top: 310px;
+        left: 880px;
         
     
         /* animation */
@@ -117,72 +110,66 @@
     #img-banco {
         position: absolute;
         height: auto;
-        width: 16%;
-        top: 53%;
-        left: 27%;
+        width: 310px;
+        top: 390px;
+        left: 520px;
     }
 
     #etiqueta-banco {
         font-family: VT323;
         font-size: 20px;
         color: white;
-        width: 20%;
+        width: 290px;
         height: auto;
         position: absolute;
         top: 269px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-catedral {
         position: absolute;
         height: auto;
-        width: 18%;
-        left: 23.5%;
-        top: 9%;
+        width: 310px;
+        left: 520px;
+        top: 20px;
     }
 
     #etiqueta-catedral {
         font-family: VT323;
         font-size: 20px;
         color: white;
-        width: 20%;
+        width: 290px;
         height: auto;
         position: absolute;
         top: 340px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-teatro {
         position: absolute;
         height: auto;
-        top: 62%;
-        width: 18%;
-        left: 55%;
+        top: 450px;
+        width: 400px;
+        left: 1020px;
     }
 
     #etiqueta-teatro {
         font-family: VT323;
         font-size: 20px;
         color: white;
-        width: 20%;
+        width: 290px;
         height: auto;
         position: absolute;
         top: 210px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-museo {
         position: absolute;
         height: auto;
-        top: 6%;
-        left: 35.3%;
-        width: 20.3%;
+        top: 60px;
+        left: 765px;
+        width: 400px;
     }
 
     #etiqueta-museo {
@@ -193,60 +180,53 @@
         height: auto;
         position: absolute;
         top: 26px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-sardina {
         position: absolute;
         height: auto;
-        top: 76%;
-        width: 15%;
-        left: 42%;
+        top: 680px;
+        width: 230px;
+        left: 860px;
     }
     
     #etiqueta-sardina {
         font-family: VT323;
         font-size: 20px;
         color: white;
-        width: 20%;
+        width: 290px;
         height: auto;
         position: absolute;
         top: 150px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-arboles {
         position: absolute;
         height: auto;
-        top: 10%;
-        width: 50%;
-        top: 3%;
-        left: 24.7%;
+        width: 950px;
+        top: 38px;
+        left: 480px;
     }
 
     #etiqueta-arboles {
         font-family: VT323;
         font-size: 20px;
         color: white;
-        width: 20%;
+        width: 290px;
         height: auto;
         position: absolute;
         top: 86px;
-        left: 1109px;
-
-        opacity: 100%;
+        left: 1500px;
     }
 
     #img-niñoFlori {
         position: absolute;
         height: auto;
-        width: 7%;
-        top: 14%;
-        left: 60%;
+        width: 140px;
+        top: 140px;
+        left: 1200px;
 
         animation-name: niñoFloriChange;
         animation-duration: 1.5s;
@@ -258,9 +238,9 @@
     #img-marinero {
         position: absolute;
         height: auto;
-        width: 3.5%;
-        top: 61%;
-        left: 45%;
+        width: 75px;
+        top: 430px;
+        left: 850px;
 
         animation-name: marineroHablando;
         animation-duration: 1.3s;
@@ -271,9 +251,9 @@
     #img-ciudadana {
         position: absolute;
         height: auto;
-        width: 4%;
-        top: 36%;
-        left: 57%;
+        width: 70px;
+        top: 300px;
+        left: 1100px;
 
         animation-name: ciudadanaHablando;
         animation-duration: 1.3s;
@@ -296,7 +276,7 @@
     }
 
     #div-teatro:hover ~ #etiqueta-teatro {
-        background-color: darkred;
+        background-color: rgb(122, 48, 48);
     }
 
     #div-banco:hover ~ #etiqueta-banco {
@@ -304,31 +284,31 @@
     }
 
     #div-catedral:hover ~ #etiqueta-catedral {
-        background-color: dark;
+        background-color: gray;
     }
 
     /*animaciones*/
     @keyframes fuenteChange {
         0% {
-            content: url("diseño/fuente/fuente\ \(1\).png")
+            content: url("diseño/fuente/fuente\ \(1\).png")
         }
         20% {
-            content: url("diseño/fuente/fuente\ \(2\).png");
+            content: url("diseño/fuente/fuente\ \(2\).png");
             
         }
         40% {
-            content: url("diseño/fuente/fuente\ \(3\).png");
+            content: url("diseño/fuente/fuente\ \(3\).png");
             
         }
         60% {
-            content: url("diseño/fuente/fuente\ \(4\).png")
+            content: url("diseño/fuente/fuente\ \(4\).png")
         }
         80% {
-            content: url("diseño/fuente/fuente\ \(5\).png");
+            content: url("diseño/fuente/fuente\ \(5\).png");
             
         }   
         100% {
-            content: url("diseño/fuente/fuente\ \(6\).png")
+            content: url("diseño/fuente/fuente\ \(6\).png")
         }
     } 
     
@@ -350,12 +330,10 @@
 
     @keyframes niñoFloriChange {
         0%  {
-            width: 7.1%;
-            content: url('diseño/npcs/niño\ parque\ 1.png')
+            content: url('diseño/npcs/niñoParque1.png')
         }
         50% {
-            content: url('diseño/npcs/niño\ parque\ 2.png');
-            left: 60.3%;
+            content: url('diseño/npcs/niñoParque2.png');
         }
     
     }
